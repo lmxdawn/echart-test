@@ -412,7 +412,7 @@ export default {
 		},
 		methods: {
 			initEcharts() {
-				myChart = echarts.init(document.getElementById('echarts'))
+				myChart = echarts.init(document.getElementById('echarts'), null, {renderer: 'svg'})
 				// 观测更新的数据在 view 层可以直接访问到
 				myChart.setOption(this.option)
 			},
